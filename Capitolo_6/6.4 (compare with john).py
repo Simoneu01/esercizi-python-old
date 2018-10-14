@@ -11,12 +11,24 @@ def potenza (a,b):
         return True    #allora a è una potenza di b ritorna "True"
     return False	   #se a non è una potenza di b ritorna "False"
 
+def potenza2 (a,b):
+    if a%b == 0 and a//b == b:
+        return True
+    else:
+        return False
+
 y='y'
 while y!='n':
     a=int(input('Inserisci a: '))
     b=int(input('Inserisci b: '))
+    print('Potenza Simo')
     if (potenza(a,b)== True):
         print(a,'è una potenza di',b)
     else:
         print(a,'non è una potenza di',b)
-    y=input('\nVuoi continuare? [y/n]')
+    print('Potenza John')
+    if (potenza2(a,b)== True):
+        print(a,'è una potenza di',b)
+    else:
+        print(a,'non è una potenza di',b)
+    y=input('Vuoi continuare? [y/n]')
