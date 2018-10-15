@@ -1,6 +1,6 @@
 import math
 
-epsilon=0.000000000000001
+epsilon=0.00000000000000001
 
 def mia_radq(a):
     x = 3
@@ -23,6 +23,3 @@ def test_radq():
         i=i+1
         
 test_radq()
-
-
-
