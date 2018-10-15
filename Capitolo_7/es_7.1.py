@@ -13,13 +13,18 @@ def mia_radq(a):
 
 
 def test_radq():
-    print('a\tmia_radq(a)\t\tmath.sqrt(a)\t\tdiff')
-    print('-\t-----------\t\t-----------\t\t-----')
+    print('a',' '*(25-len('mia_radq(a)')),'mia_radq(a)',' '*(25-len('math.sqrt(a)')),'math.sqrt(a)',' '*(25-len('diff')),'diff')
+    print('-',' '*(25-len('mia_radq(a)')),'-----------',' '*(25-len('math.sqrt(a)')),'------------',' '*(25-len('diff')),'----')
     i=1
     while i<10:
         mia_radq(i)
         diff=abs(mia_radq(i)-math.sqrt(i))
-        print(i,mia_radq(i),' '*(20 - len(math.sqrt(i))),' '*(20-len(diff)))
+        print(str(i),' '*(25-len(str(mia_radq(i)))),str(mia_radq(i)),' '*(25-len(str(math.sqrt(i)))),str(math.sqrt(i)),' '*(25-len(str(diff))),str(diff))
         i=i+1
         
 test_radq()
+
+'''i=10
+print(len(str(mia_radq(i))))'''
+
+
