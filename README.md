@@ -1,0 +1,3 @@
+# esercizi-python
+
+Esercizi vari
