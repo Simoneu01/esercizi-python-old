@@ -24,7 +24,5 @@ def test_radq():
         
 test_radq()
 
-'''i=10
-print(len(str(mia_radq(i))))'''
 
 
