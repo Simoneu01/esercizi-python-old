@@ -1,3 +1,9 @@
+'''
+Esercizio 7.1. Copiate il ciclo del Paragrafo 7.5 e incapsulatelo in una funzione di nome mia_radq
+che prenda a come parametro, scelga un valore appropriato di x, e restituisca una stima del valore
+della radice quadrata di a.
+'''
+
 import math
 
 epsilon=0.00000000000000001
