@@ -9,9 +9,13 @@ def eval_ciclo():
         riga =  input('> ')
         if riga == 'fatto':
             break
-        print(eval(riga))
-
+        x=eval(riga)
+        print(x)
     print('Finito!')
-    return eval(riga)
+    return x
 
-eval_ciclo()
+print(eval_ciclo())
+
+
+
+
