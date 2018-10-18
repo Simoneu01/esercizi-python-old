@@ -7,8 +7,7 @@ se a è una potenza di b. Nota: dovete pensare bene al caso base.
 def potenza (a,b):
     while a % b == 0:  #Finchè a è divisibile per b 
         a = a / b	   #allora imposta a=a/b
-    if a == 1:		   #se a è 1 
-        return True    #allora a è una potenza di b ritorna "True"
+    if a == 1:return True    #allora a è una potenza di b ritorna "True"
     return False	   #se a non è una potenza di b ritorna "False"
 
 def potenza2 (a,b):
