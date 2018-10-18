@@ -10,3 +10,4 @@ while y!='n':
     giustifi_destra(input('Inserisci stringa: '))
     y=input('Vuoi continuare? [y/n]')
 
+print('{:<20}'.format(input('INSERISCI UNA PAROLA: ')))
