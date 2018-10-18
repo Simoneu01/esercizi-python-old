@@ -1,11 +1,12 @@
 import math
 
-def area(raggio):
-    a = math.pi * raggio**2
+def area(x):
+    if type(x) != int or type(x) != float: return area(eval(input('Iserisci un numero: ')))
+    a = math.pi * x**2
     return a
 
-def area1(raggio):
-    return math.pi * raggio**2
+def area1(x):
+    return math.pi * x**2
 
 def valore_assoluto(x):
     if x < 0:
@@ -19,11 +20,12 @@ def distanza(x1, y1, x2, y2):
     risultato = math.sqrt(dsquadr)
     return risultato
 
-def area_cerchio(xc, yc, xp, yp):
-    return area(distanza(xc, yc, xp, yp))
+def area_cerchio(x1, y1, x2, y2):
+    return area(distanza(x1, y1, x2, y2))
 
 def divisibile(x, y):
-    return x % y == 0
+    if x % y == 0: return True
+    return False
 
 def compreso_tra(x, y, z):
     if x>y:
@@ -32,12 +34,12 @@ def compreso_tra(x, y, z):
         return False
     return True
 
-def fattoriale(n):
-    if n == 0:
+def fattoriale(x):
+    if x == 0:
         return 1
     else:
-        ricors = fattoriale(n-1)
-        risultato = n * ricors
+        ricors = fattoriale(x-1)
+        risultato = x * ricors
     return risultato
 
 funzioni='''
@@ -52,7 +54,7 @@ funzioni='''
 7 = Funzione fattoriale
 '''
 
-y='y'
+'''y='n'
 while y!='n':
     print(funzioni)
     x=int(input('Che funzione vuoi provare? [0-9] '))
@@ -90,3 +92,14 @@ while y!='n':
     else:
         print('Hai sbagliato qualcosa')
     y=input('\nVuoi continuare? [y/n]')
+'''
+    
+
+print(funzioni)
+funz = ['area(eval(input(\'Inserisci raggio: \')))','area1(int(input(\'Inserisci il raggio: \')))','valore_assoluto(int(input(\'Inserisci un valore: \')))',
+        'distanza(int(input(\'Inserisci x1: \')),int(input(\'Inserisci y1: \')),int(input(\'Inserisci x2: \')),int(input(\'Inserisci y2: \')))','area_cerchio(int(input(\'Inserisci xc: \')),int(input(\'Inserisci yc: \')),int(input(\'Inserisci xp: \')),int(input(\'Inserisci yp: \')))',
+        'divisibile(int(input(\'Inserisci x: \')),int(input(\'Inserisci y: \')))','compreso_tra(int(input(\'Inserisci x: \')),int(input(\'Inserisci y: \')),int(input(\'Inserisci z: \')))','fattoriale(int(input(\'Inserisci un numero: \')))']
+r = input('Che funzione vuoi provare: ')
+print(eval(eval('funz[{}]'.format(r))))
+
+

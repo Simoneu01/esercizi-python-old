@@ -16,6 +16,9 @@ def eval_ciclo():
 
 print(eval_ciclo())
 
+nomi1 = 5
+nomi2 = 6
+nomi3 = 7
 
-
-
+for i in range (1,4):
+    print('nomi{}'.format(i))

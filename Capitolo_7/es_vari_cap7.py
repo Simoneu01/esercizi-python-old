@@ -21,15 +21,6 @@ def contoallarovescia(n):
 contoallarovescia(int(input('Inserisci un numero: ')))
 
 ########
-def sequenza(n):
-    while n!=1:
-        print(n)
-        if n%2 == 0: # n è pari
-            n = n / 2
-        else:
-            n = n*3+1  #n è dispari
-
-sequenza(int(input('Inserisci un numero: ')))
 
 
 while True:
@@ -40,7 +31,6 @@ while True:
 
 print('Finito!')
 
-'''
 
 import math
 
@@ -55,5 +45,16 @@ while True:
     if abs(y-x) < epsilon:
         break
     x = y
+
+'''
+def sequenza(n):
+    while n!=1:
+        print(n)
+        if n%2 == 0: # n è pari
+            n = n / 2
+        else:
+            n = n*3+1  #n è dispari
+
+sequenza(int(input('Inserisci un numero: ')))
 
     
